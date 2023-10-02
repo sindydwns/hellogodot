@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://3qbotuy7h0j8"]
+
+[ext_resource type="Script" path="res://Avatar.gd" id="1_6rtv3"]
+[ext_resource type="Texture2D" uid="uid://dwfjpkvfa0d8j" path="res://icon.png" id="1_rs05u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_omlgl"]
+bg_color = Color(0.862745, 0.74902, 0.717647, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n6yxq"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+anti_aliasing = false
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -952.0
+offset_bottom = -548.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_omlgl")
+
+[node name="Avatar" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 88.0
+offset_bottom = -9.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n6yxq")
+script = ExtResource("1_6rtv3")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/Avatar"]
+visible = false
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rs05u")
+expand_mode = 1

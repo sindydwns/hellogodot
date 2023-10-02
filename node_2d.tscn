@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ljup4fg8klgi"]
+
+[ext_resource type="PackedScene" uid="uid://3qbotuy7h0j8" path="res://button.tscn" id="1_kgumy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Control" parent="." instance=ExtResource("1_kgumy")]
+anchors_preset = 10
+anchor_bottom = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_vertical = 1
