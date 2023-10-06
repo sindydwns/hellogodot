@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://jtgsjjtp85dt"]
+[gd_scene load_steps=3 format=3 uid="uid://jtgsjjtp85dt"]
+
+[ext_resource type="PackedScene" uid="uid://ctykawuvi8luy" path="res://scene/Player.tscn" id="1_nxlxn"]
+[ext_resource type="PackedScene" uid="uid://dx1nwkw0v2jjj" path="res://scene/Block.tscn" id="2_5fw0c"]
 
 [node name="game" type="Control"]
 layout_mode = 3
@@ -7,3 +10,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_nxlxn")]
+position = Vector2(576, 384)
+
+[node name="Block" parent="." instance=ExtResource("2_5fw0c")]
+position = Vector2(448, 512)
+
+[node name="Block2" parent="." instance=ExtResource("2_5fw0c")]
+position = Vector2(576, 512)
+
+[node name="Block3" parent="." instance=ExtResource("2_5fw0c")]
+position = Vector2(704, 512)
