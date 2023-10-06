@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Hello Godot"
-run/main_scene="res://ui.tscn"
+run/main_scene="res://scene/game.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://resource/icon.svg"
 
 [rendering]
 
